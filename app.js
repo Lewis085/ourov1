@@ -64,8 +64,19 @@ function navigate(page, productId) {
     document.querySelector('.bottom-nav').style.display = 'flex';
   }
 
+  const titleMap = {
+    home: "Mgold - Início",
+    catalog: "Mgold - Catálogo",
+    contact: "Mgold - Contato",
+    detail: "Mgold - Detalhes"
+  };
+  document.title = titleMap[page] || "Mgold";
+
   if (page === 'detail' && productId) {
     currentProduct = PRODUCTS.find(p => p.id === productId);
+    if (currentProduct) {
+      document.title = `Mgold - ${currentProduct.name}`;
+    }
     renderDetail();
   }
   currentPage = page;
