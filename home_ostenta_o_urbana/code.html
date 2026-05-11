@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MGOLD VIPS - Home</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&amp;family=Space+Grotesk:wght@700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#e9c349",
+                    "on-tertiary-fixed-variant": "#4a4642",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container": "#201f1f",
+                    "on-primary": "#3c2f00",
+                    "surface-variant": "#353534",
+                    "tertiary-fixed": "#e8e1dc",
+                    "on-secondary-container": "#dab08b",
+                    "on-primary-fixed": "#241a00",
+                    "on-secondary": "#452b0f",
+                    "surface-container-highest": "#353534",
+                    "on-secondary-fixed-variant": "#5e4123",
+                    "secondary-container": "#614325",
+                    "on-background": "#e5e2e1",
+                    "on-primary-fixed-variant": "#574500",
+                    "error": "#ffb4ab",
+                    "on-tertiary-container": "#484541",
+                    "on-surface": "#e5e2e1",
+                    "surface-tint": "#e9c349",
+                    "primary-fixed": "#ffe088",
+                    "secondary": "#e9be98",
+                    "tertiary": "#d4cdc8",
+                    "surface": "#131313",
+                    "primary-container": "#d4af37",
+                    "secondary-fixed": "#ffdcbf",
+                    "outline-variant": "#4d4635",
+                    "on-error": "#690005",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-high": "#2a2a2a",
+                    "on-tertiary": "#33302c",
+                    "surface-bright": "#3a3939",
+                    "error-container": "#93000a",
+                    "secondary-fixed-dim": "#e9be98",
+                    "background": "#131313",
+                    "on-primary-container": "#554300",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed": "#2c1600",
+                    "outline": "#99907c",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-surface-variant": "#d0c5af",
+                    "inverse-on-surface": "#313030",
+                    "on-tertiary-fixed": "#1e1b18",
+                    "tertiary-container": "#b8b2ad",
+                    "tertiary-fixed-dim": "#ccc5c0",
+                    "inverse-primary": "#735c00",
+                    "surface-dim": "#131313",
+                    "primary": "#f2ca50"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "container-max": "1440px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "headline-xl": [
+                            "Montserrat"
+                    ],
+                    "headline-lg": [
+                            "Montserrat"
+                    ],
+                    "label-caps": [
+                            "Space Grotesk"
+                    ],
+                    "body-md": [
+                            "Montserrat"
+                    ],
+                    "headline-lg-mobile": [
+                            "Montserrat"
+                    ],
+                    "display-lg": [
+                            "Montserrat"
+                    ],
+                    "body-lg": [
+                            "Montserrat"
+                    ]
+            },
+            "fontSize": {
+                    "headline-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.2em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.5",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "display-lg": [
+                            "80px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "-0.04em",
+                                    "fontWeight": "900"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "500"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        /* Urban Ostentation specific utilities */
+        .glowing-gold-hover:hover {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            border-color: #f2ca50;
+        }
+        .inner-edge-light {
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background dark:bg-background border-b border-surface-variant flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16">
+<button class="text-primary dark:text-primary hover:opacity-80 transition-opacity scale-95 active:duration-75 focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+<div class="font-headline-lg text-headline-lg font-black text-primary tracking-tighter uppercase">
+            MGOLD VIPS
+        </div>
+<button class="text-primary dark:text-primary hover:opacity-80 transition-opacity scale-95 active:duration-75 focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">chat</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="min-h-screen pt-16 pb-24 md:pb-0">
+<!-- Hero Section -->
+<section class="relative h-[795px] w-full flex flex-col justify-end items-center text-center pb-20 px-margin-mobile md:px-margin-desktop overflow-hidden border-b border-surface-variant">
+<!-- Simulated Video Background via Image -->
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" data-alt="A dynamic, high-contrast close-up shot of heavy gold Cuban link chains crashing together. The scene is illuminated by harsh flash photography typical of high-end urban streetwear shoots, creating stark, deep black shadows and intense, blinding reflections on the polished gold surfaces. The background is a pitch-black void, emphasizing the raw luxury and aggressive weight of the jewelry. The aesthetic is dark, exclusive, and undeniably premium." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFrr4dY46SxVav67-8lBptAhM0CAumUnUu7Z9ZX5TYV-LlKom0EiGizzmL2Pzom2MB136gn7Fz-2PZVuvxHqLD1uHH6qXuJw6hG_tkXAvhq8WLh6uvXWMky6eCkIlqstzwjAAJBtnYgvioUwM7BB8oF3BtD_HVtFiFEhPV6hdbN3D9NLVJ0BSnZGZc_b2vi9kn3_5Z9OvL_61Xk0J-r2jTdxOJzwuKVF2jWPM6wQdS_vEC62Ldduv2JiWxLE7Zozv75TBkg8_9gudd');">
+</div>
+<!-- Dark Showroom Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<div class="relative z-10 max-w-4xl mx-auto">
+<h1 class="font-display-lg text-display-lg text-on-background uppercase tracking-tighter mb-8 drop-shadow-2xl">
+                    O peso fala <span class="text-primary">antes.</span>
+</h1>
+<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-10 py-5 rounded-none uppercase inner-edge-light glowing-gold-hover transition-all duration-300 transform hover:scale-105 active:scale-95">
+                    VER COLEÇÃO
+                </button>
+</div>
+</section>
+<!-- Top Status Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end border-b border-outline-variant pb-4 mb-12">
+<h2 class="font-headline-xl text-headline-xl text-on-background uppercase tracking-tighter">
+                    TOP STATUS
+                </h2>
+<a class="font-label-caps text-label-caps text-primary hover:opacity-80 transition-opacity hidden md:block" href="#">VER TODOS</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Product Card 1 -->
+<article class="bg-surface border border-surface-variant group cursor-pointer hover:border-primary-container transition-colors duration-300">
+<div class="relative aspect-square overflow-hidden bg-[#0D0D0D]">
+<img alt="Product" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 mix-blend-luminosity hover:mix-blend-normal" data-alt="A macro shot of an exceptionally thick 18K gold Cuban link chain resting on a rough, dark slate surface. The lighting is harsh and directional, reminiscent of a gritty high-fashion editorial. The gold gleams fiercely against the oppressive darkness of the background, highlighting the intricate interlocking details and sheer weight of the piece. The overall mood is powerful, aggressive, and undeniably luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcUMujJN70Y0UWJU7qDybTmcyszxPMfHQVkzFBvD0lP06Z2ZQOj6jA1pP8pu8NjxQ3kYmWIhK1G8cqU9-Yof-xjDRlaI2efXZUDOAFPtxX1v97qKOzhz-ebbZuxdEgmbXnFCNiyHLZ1uIRlWTuzCK1ZQ5R8rWFcWR_4LRoUJ-WoDjGIVmLOfwGgXHMHTYeVBGU1E-vXsT2eP7mtVr6-zGSCskym6ORWBDqV-mIe50fHsS0N0rwxncP_7qwhGYDb9_Cg87C5wX0cTTJ"/>
+<div class="absolute top-4 left-4 bg-[#0D0D0D] border border-primary-container px-3 py-1">
+<span class="font-label-caps text-label-caps text-primary">HEAVYWEIGHT</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background uppercase mb-2">CORRENTE CUBANA 18K</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">15mm / Fecho Cravejado / Ouro Maciço</p>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tighter">R$ 14.500</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-surface border border-surface-variant group cursor-pointer hover:border-primary-container transition-colors duration-300">
+<div class="relative aspect-[4/5] md:aspect-square overflow-hidden bg-[#0D0D0D]">
+<img alt="Product" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 mix-blend-luminosity hover:mix-blend-normal" data-alt="A dramatic, close-up photograph of a premium executive gold watch with a dark, textured dial. The watch is positioned on a highly reflective black acrylic surface in a dark showroom setting. A single, intense spotlight hits the bezel, creating sharp, contrasting shadows and highlighting the meticulous craftsmanship and metallic gleam of the gold bracelet. The aesthetic is cold, precise, and expensive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQlieAH__9Ua5rE80si0yhfOVWx12q9kJMYOCKKcFt8ep0luDLYWuDZ6aJQywPAop5_0x3HgYfIg4LGcnQ9T61HTkCiZ0MZgRQc4OicWKvPMvx_0vidlr0hCXTG6vLt_T0lKXaEyAK-UvzQxHQjDljg2b65xrt29_KqmQCuvsGPyyPr2K3Q9n-H2gebpOHKvg3GRQEcmu3uZGMOKwd7_TTLxxAWw2laDziv8HQE5uoOYoRv0KGhJdaITteZpFRp4Z2vp2c9zDaquAN"/>
+</div>
+<div class="p-8 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background uppercase mb-2">RELÓGIO EXECUTIVE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Automático / Mostrador Negro / Safira</p>
+</div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tighter">R$ 8.900</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Lifestyle Grid Section (Instagram Style) -->
+<section class="py-24 px-unit bg-[#0D0D0D]">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-xl text-headline-xl text-on-background uppercase tracking-tighter">
+                        O MOVIMENTO
+                    </h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-4">@MGOLDVIPS</p>
+</div>
+<!-- Bento / Offset Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-unit md:gap-2 auto-rows-[200px] md:auto-rows-[300px]">
+<!-- Item 1 (Large) -->
+<div class="col-span-2 row-span-2 relative group overflow-hidden border border-surface-variant hover:border-outline-variant transition-colors">
+<img alt="Lifestyle" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A gritty, high-contrast street style photograph showing a tattooed wrist gripping the steering wheel of a luxury car. The focus is entirely on a massive, diamond-encrusted gold ring and a thick gold bracelet. The lighting mimics a harsh camera flash at night, creating stark shadows and intense reflections off the jewelry. The mood is unapologetic, urban, and heavily associated with trap culture aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh4QboFC2YvQ6CHk9APiwTeXYr7xXMG3icPHLOSg76niDBzf55E6ZezbIDn31yWbg0_bC5c8D7hC0KlypmeWYZWjff2c5xqSoqLjKQhEWI0mo4C-Bae0vHR86okHqBueDCm8xrUjyUMVxsrU-64gYi0dU5rhKGMjdDrV6HLgltfDeVBzbLvtOlwlN4TwikCLxh70kXNZnxrG0R0Cy18Y90jGp0gnpM1zKM_s1tg0yGaHRjVgYrMIFtq-uhPHAP9ZThxQiUTZ5xPaZD"/>
+</div>
+<!-- Item 2 -->
+<div class="col-span-1 row-span-1 relative group overflow-hidden border border-surface-variant hover:border-outline-variant transition-colors">
+<img alt="Lifestyle" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A tight macro shot focusing solely on the intricate clasp of a heavy gold necklace resting against a dark, leather jacket. The image is captured with a stark, direct flash that blows out the highlights on the gold, emphasizing its raw metallic texture against the pitch-black shadows of the leather. The visual style is raw, minimalist noir, focusing strictly on texture and wealth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMdS59Jv9kiwYBpbSCOE_0jU0WtWk4Q9-1x4zAG8qD-UkG9wVBIQ0ujIWQQDIOvSY73e6BSDkD67aPGinDgqTjuUMieC2iIhi_4sqhpCeYZC-T0i_N9rDo_iSpLhZzv28qxabCa1-hGtnolm2FvEOOkWddetXtnR7WIsgPNsPG7a_EIQfHAPAOiCOupPmgHl0dk5t6tTXYgBHL029oEjL3vo_DkNO31h7XYpFf98zKYVUfom0Tg5HmgCio8bMABGKzHQTqYi2H7ncH"/>
+</div>
+<!-- Item 3 -->
+<div class="col-span-1 row-span-2 relative group overflow-hidden border border-surface-variant hover:border-outline-variant transition-colors">
+<img alt="Lifestyle" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A portrait shot from the neck down of an individual wearing multiple layered gold chains over a plain black t-shirt. The lighting is dramatic and moody, with a strong vignette effect pulling focus to the center where the gold clusters together. The high-grain texture of the photograph gives it a vintage, raw streetwear magazine feel, highlighting the sheer volume of jewelry as a status symbol." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI590Xj7PomSiwfYhdcqMqxaabmAGh0sU9gKIvoGPmn6fwPCdVTph_KguTfMENO6rRVWScpnuL8fbhQn9IsE5A2UZAcXIasRJPHcuFTQx9LoXU8sLlc-548rQhgE_7Wn8k01wGAyjXmHyD9vUN-mgrhppzLBgkvJcWE4I0PstQTm7Oote0Y2t2aKFadW7NFUIB61e3vITjhfT6dof9DwK36sMDRO0m5QBrEEAOI-Vk83f4jcH_0WaVOBS2cq3tkv5LbPes-qw4DFzF"/>
+</div>
+<!-- Item 4 -->
+<div class="col-span-1 row-span-1 relative group overflow-hidden bg-surface-container flex items-center justify-center border border-surface-variant hover:border-primary-container transition-colors">
+<div class="text-center p-4">
+<span class="material-symbols-outlined text-primary text-4xl mb-2" style="font-variation-settings: 'FILL' 1;">verified</span>
+<p class="font-label-caps text-label-caps text-on-background">100% OURO 18K</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-4 bg-background border-t border-surface-variant shadow-lg rounded-t-xl md:hidden">
+<!-- Active Tab: Início -->
+<a class="flex flex-col items-center justify-center text-primary-fixed-dim font-bold tap-highlight-transparent scale-110 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-caps text-label-caps uppercase text-[10px]">Início</span>
+</a>
+<!-- Inactive Tab: Catálogo -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors tap-highlight-transparent" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">grid_view</span>
+<span class="font-label-caps text-label-caps uppercase text-[10px]">Catálogo</span>
+</a>
+<!-- Inactive Tab: WhatsApp -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors tap-highlight-transparent" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">chat</span>
+<span class="font-label-caps text-label-caps uppercase text-[10px]">WhatsApp</span>
+</a>
+<!-- Inactive Tab: Loja -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors tap-highlight-transparent" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">storefront</span>
+<span class="font-label-caps text-label-caps uppercase text-[10px]">Loja</span>
+</a>
+</nav>
+</body></html>

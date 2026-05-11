@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MGold Vips - Catálogo</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&amp;family=Space+Grotesk:wght@700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#4a4642",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container": "#201f1f",
+                        "on-primary": "#3c2f00",
+                        "surface-variant": "#353534",
+                        "tertiary-fixed": "#e8e1dc",
+                        "on-secondary-container": "#dab08b",
+                        "on-primary-fixed": "#241a00",
+                        "on-secondary": "#452b0f",
+                        "surface-container-highest": "#353534",
+                        "on-secondary-fixed-variant": "#5e4123",
+                        "secondary-container": "#614325",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed-variant": "#574500",
+                        "error": "#ffb4ab",
+                        "on-tertiary-container": "#484541",
+                        "on-surface": "#e5e2e1",
+                        "surface-tint": "#e9c349",
+                        "primary-fixed": "#ffe088",
+                        "secondary": "#e9be98",
+                        "tertiary": "#d4cdc8",
+                        "surface": "#131313",
+                        "primary-container": "#d4af37",
+                        "secondary-fixed": "#ffdcbf",
+                        "outline-variant": "#4d4635",
+                        "on-error": "#690005",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary": "#33302c",
+                        "surface-bright": "#3a3939",
+                        "error-container": "#93000a",
+                        "secondary-fixed-dim": "#e9be98",
+                        "background": "#131313",
+                        "on-primary-container": "#554300",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed": "#2c1600",
+                        "outline": "#99907c",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface-variant": "#d0c5af",
+                        "inverse-on-surface": "#313030",
+                        "on-tertiary-fixed": "#1e1b18",
+                        "tertiary-container": "#b8b2ad",
+                        "tertiary-fixed-dim": "#ccc5c0",
+                        "inverse-primary": "#735c00",
+                        "surface-dim": "#131313",
+                        "primary": "#f2ca50"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1440px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-caps": ["Space Grotesk"],
+                        "body-md": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "body-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "800" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.2em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "800" }],
+                        "display-lg": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "900" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Hide scrollbar for filter pills */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="bg-background dark:bg-background border-b border-surface-variant sticky top-0 z-40 w-full">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16">
+<button aria-label="Search" class="text-primary dark:text-primary hover:opacity-80 transition-opacity scale-95 active:duration-75 flex items-center justify-center p-2 -ml-2">
+<span class="material-symbols-outlined text-[28px]">search</span>
+</button>
+<h1 class="font-headline-lg text-headline-lg uppercase font-black text-primary tracking-tighter">MGOLD VIPS</h1>
+<button aria-label="Chat" class="text-primary dark:text-primary hover:opacity-80 transition-opacity scale-95 active:duration-75 flex items-center justify-center p-2 -mr-2">
+<span class="material-symbols-outlined text-[28px]">chat</span>
+</button>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="flex-1 pb-24 md:pb-16 max-w-container-max mx-auto w-full">
+<!-- Filters (Scrollable) -->
+<section class="w-full px-margin-mobile md:px-margin-desktop py-6">
+<div class="flex overflow-x-auto gap-3 scrollbar-hide snap-x snap-mandatory pb-2">
+<button class="snap-start shrink-0 bg-primary-container text-on-primary border-t border-white/20 shadow-[0_0_15px_rgba(212,175,55,0.15)] font-label-caps text-label-caps uppercase px-6 py-3 rounded-none tracking-widest">
+                    TODOS
+                </button>
+<button class="snap-start shrink-0 border border-outline-variant text-on-surface hover:border-primary-container hover:text-primary-container transition-colors font-label-caps text-label-caps uppercase px-6 py-3 rounded-none tracking-widest">
+                    CORRENTES
+                </button>
+<button class="snap-start shrink-0 border border-outline-variant text-on-surface hover:border-primary-container hover:text-primary-container transition-colors font-label-caps text-label-caps uppercase px-6 py-3 rounded-none tracking-widest">
+                    ANÉIS
+                </button>
+<button class="snap-start shrink-0 border border-outline-variant text-on-surface hover:border-primary-container hover:text-primary-container transition-colors font-label-caps text-label-caps uppercase px-6 py-3 rounded-none tracking-widest">
+                    PULSEIRAS
+                </button>
+<button class="snap-start shrink-0 border border-outline-variant text-on-surface hover:border-primary-container hover:text-primary-container transition-colors font-label-caps text-label-caps uppercase px-6 py-3 rounded-none tracking-widest">
+                    RELÓGIOS
+                </button>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-low border border-surface-variant flex flex-col group">
+<div class="relative w-full aspect-square bg-surface-lowest overflow-hidden">
+<img alt="Corrente Cuban Ice" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-out brightness-110 contrast-125 saturate-50" data-alt="A macro, high-contrast photograph of a thick, diamond-encrusted gold cuban link chain laid out on a highly reflective, pitch-black surface. The lighting is extremely harsh, mimicking direct camera flash, causing intense, blown-out specular highlights on the diamonds and deep, crushed black shadows. The scene embodies an 'Urban Ostentation' aesthetic, combining raw streetwear grit with ultra-luxurious materials. A subtle lens flare bleeds from the brightest diamond reflection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPMX9UbAowwU-KFUZx9BbWfc8lJpF8aruFYY4F3cFMaMriEe4s1VROnklII3dmseDRqnWOelyh9ou-6eX6-iLWvCnuR6Qd4BCUfux7a_91ays00x3EQpxFHFUbAFaCxCqxisL9opo25idVKAuMUlYqNQ-ORPI45CuHpWTJANkS3tFAkWyOl66CE2Dvr3bUtjm56YsfBfOPiiD9DuKwt1U5YcALS0QSQTf_RsY6cupPKAQHmpvud8RcOEuEM2O4OMfLe0P-UZWViDiv"/>
+<!-- Specular highlight overlay -->
+<div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent pointer-events-none"></div>
+<div class="absolute top-2 left-2 bg-background border border-primary-container text-primary-container font-label-caps text-label-caps px-2 py-1 tracking-widest">
+                            NOVO DROP
+                        </div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<h2 class="font-body-md text-body-md text-on-surface leading-snug">Corrente Cuban Link Ice 18K 15mm Cravejada</h2>
+<div>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-black mb-4">R$ 14.500</p>
+<button class="w-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase py-3 px-4 flex items-center justify-center gap-2 border-t border-white/20 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-shadow">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                CHAMAR
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-low border border-surface-variant flex flex-col group">
+<div class="relative w-full aspect-square bg-surface-lowest overflow-hidden">
+<img alt="Anel Sinete Ouro" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-out brightness-110 contrast-125 saturate-50" data-alt="A dramatic, close-up shot of a massive gold signet ring featuring a prominent crest, resting on cracked asphalt painted black. Lit entirely by a single, powerful strobe, casting sharp, elongated shadows that emphasize the ring's immense scale. The texture of the gold is hyper-detailed, showing minor imperfections that add to its raw, masculine appeal within the 'Urban Ostentation' style. The background fades immediately into an abyss of deep black." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOzW5yJJ76Gto_9IVAogj_aDfcswo-CKI6oZLnR8QWC1SpSx18VLEMaE_NBbEehsR4tOqnLB_u1cYTs-3HaK2sJmYo87G1FvniWEyibOVXFt4fQodtaFBkcpwUlmlGJ8Sjyl1rWv3adi1JkzZ9Vhc47fFOF3QBK9M41ODNg3HZWvJZSGMKagchC44aLMvRwXCY8a3tcWVMY5SsdbTxdm2yi5QLDBu24iMyQaf-I_P_WdrKRN5tneC3Zpd_DFD77Dv8BBOQ40E6jmdS"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent pointer-events-none"></div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<h2 class="font-body-md text-body-md text-on-surface leading-snug">Anel Sinete Imperial Maciço Ouro 18K</h2>
+<div>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-black mb-4">R$ 8.900</p>
+<button class="w-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase py-3 px-4 flex items-center justify-center gap-2 border-t border-white/20 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-shadow">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                CHAMAR
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-low border border-surface-variant flex flex-col group">
+<div class="relative w-full aspect-square bg-surface-lowest overflow-hidden">
+<img alt="Relógio Automático" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-out brightness-110 contrast-125 saturate-50" data-alt="An aggressive, high-fashion photograph of a luxury stainless steel automatic watch with a gold bezel and dark dial. The watch is suspended in mid-air against a completely pitch-black backdrop, illuminated by harsh, angled rim lighting that catches the polished metallic edges. The image has a noticeable grain structure typical of high-ISO film photography, reinforcing the premium, exclusive 'Dark Showroom' aesthetic. Reflections on the crystal dial are sharp and geometric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2nwl4JVNW0W2iqTF0wFQy6Mq528-pUWIKstR-eaa2pkrSlznC6olewnGvivIO-0pTcudXuqkSF9zv7RzJuWWRhOlr2mGYfjdEMxPJxq7QAmJ94i0VsrI15PO7rx0d90Qq1y-6tUP88MEkRiRkhKDXJchmFV1HcTgUaR21hW5O0Kr1mwLvfuWYMtRZ4k1k7ToX_Jfo4CInbmvihAboShvIP04oZNG5-Fi29pfUo4V6vcLIA-rYDbBIccG72EBZtmtulEZivxPycwBp"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent pointer-events-none"></div>
+<div class="absolute top-2 left-2 bg-background border border-primary-container text-primary-container font-label-caps text-label-caps px-2 py-1 tracking-widest">
+                            RARO
+                        </div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<h2 class="font-body-md text-body-md text-on-surface leading-snug">Relógio Automático Chronograph Ouro/Aço</h2>
+<div>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-black mb-4">R$ 32.000</p>
+<button class="w-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase py-3 px-4 flex items-center justify-center gap-2 border-t border-white/20 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-shadow">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                CHAMAR
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-low border border-surface-variant flex flex-col group">
+<div class="relative w-full aspect-square bg-surface-lowest overflow-hidden">
+<img alt="Pulseiras Cordão Baiano" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-out brightness-110 contrast-125 saturate-50" data-alt="A gritty, high-contrast shot of multiple thin gold rope chains draped over an industrial concrete block. The scene is shrouded in deep shadows, with a stark, blinding light source originating from directly overhead, turning the gold into streaks of pure white and brilliant yellow. The composition feels spontaneous and raw, resembling a behind-the-scenes music video still, perfectly capturing the 'Urban Ostentation' brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB5jZq9g2f3E-nX1qAgNx36SOuT9F_q8LfmWpk84P18QyDNc_6LNQOnqgofpEUyM9ppFR4uIzV6hlffH6YXcLQMuHTWXgg8kgPKNfZ4Vu1-GyeExOFEck1UlIGI-f8TVLeoWLKIOuWV4r8e_AmVPZl8-X2yZ3cof2yZajkkJAvPlm18V8i9zuRrpOn7AHKpwsJJaSjsCi34XfqQ6xg5rYZ1zVPZEZ0Ed-nrHf44c5ASg7LXbhB3xYz-xpk2k6w6_FqzRJemG5_Uzad"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent pointer-events-none"></div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<h2 class="font-body-md text-body-md text-on-surface leading-snug">Pulseira Cordão Baiano Duplo Ouro 18K</h2>
+<div>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-black mb-4">R$ 6.200</p>
+<button class="w-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase py-3 px-4 flex items-center justify-center gap-2 border-t border-white/20 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-shadow">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                CHAMAR
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-4 bg-background bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-surface-variant">
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors tap-highlight-transparent scale-110 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-caps text-label-caps uppercase">Início</span>
+</button>
+<button class="flex flex-col items-center justify-center text-primary-fixed-dim font-bold hover:text-primary transition-colors tap-highlight-transparent scale-110 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="font-label-caps text-label-caps uppercase text-[11px]">Catálogo</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors tap-highlight-transparent scale-110 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">chat</span>
+<span class="font-label-caps text-label-caps uppercase">WhatsApp</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors tap-highlight-transparent scale-110 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">storefront</span>
+<span class="font-label-caps text-label-caps uppercase">Loja</span>
+</button>
+</nav>
+</body></html>

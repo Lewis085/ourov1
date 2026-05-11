@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0e0e0e">
+<meta name="description" content="MGOLD VIPS - Joias de luxo urbano. Correntes, anéis, pulseiras e relógios em ouro 18K.">
+<title>MGOLD VIPS - Luxo Urbano</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { min-height: 100dvh; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0; }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="app-header">
+  <button id="search-btn"><span class="material-symbols-outlined">search</span></button>
+  <button id="back-btn" style="display:none" onclick="navigate(currentProduct?'catalog':'home')"><span class="material-symbols-outlined">arrow_back</span></button>
+  <h1>MGOLD VIPS</h1>
+  <button><span class="material-symbols-outlined">chat</span></button>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="main-content">
+
+<!-- PAGE: HOME -->
+<div id="page-home" class="page active">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFrr4dY46SxVav67-8lBptAhM0CAumUnUu7Z9ZX5TYV-LlKom0EiGizzmL2Pzom2MB136gn7Fz-2PZVuvxHqLD1uHH6qXuJw6hG_tkXAvhq8WLh6uvXWMky6eCkIlqstzwjAAJBtnYgvioUwM7BB8oF3BtD_HVtFiFEhPV6hdbN3D9NLVJ0BSnZGZc_b2vi9kn3_5Z9OvL_61Xk0J-r2jTdxOJzwuKVF2jWPM6wQdS_vEC62Ldduv2JiWxLE7Zozv75TBkg8_9gudd')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="font-display">O peso fala <span>antes.</span></h1>
+      <button class="btn-primary" onclick="navigate('catalog')">VER COLEÇÃO</button>
+    </div>
+  </section>
+
+  <!-- Top Status -->
+  <section style="padding:60px 20px;max-width:1440px;margin:0 auto">
+    <div class="section-header">
+      <h2 class="font-headline-xl uppercase">TOP STATUS</h2>
+      <a class="font-label text-primary" style="cursor:pointer;text-decoration:none" onclick="navigate('catalog')">VER TODOS</a>
+    </div>
+    <!-- Card 1 -->
+    <article class="product-card mb-8" data-product-id="1" style="border:1px solid var(--surface-variant);cursor:pointer">
+      <div class="card-img" style="aspect-ratio:auto;height:350px">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcUMujJN70Y0UWJU7qDybTmcyszxPMfHQVkzFBvD0lP06Z2ZQOj6jA1pP8pu8NjxQ3kYmWIhK1G8cqU9-Yof-xjDRlaI2efXZUDOAFPtxX1v97qKOzhz-ebbZuxdEgmbXnFCNiyHLZ1uIRlWTuzCK1ZQ5R8rWFcWR_4LRoUJ-WoDjGIVmLOfwGgXHMHTYeVBGU1E-vXsT2eP7mtVr6-zGSCskym6ORWBDqV-mIe50fHsS0N0rwxncP_7qwhGYDb9_Cg87C5wX0cTTJ" alt="Corrente Cubana 18K" style="opacity:0.9">
+        <div class="badge"><span class="font-label" style="color:var(--primary)">HEAVYWEIGHT</span></div>
+      </div>
+      <div style="padding:24px">
+        <h3 class="font-headline-mobile uppercase" style="margin-bottom:8px">CORRENTE CUBANA 18K</h3>
+        <p class="font-body-md text-muted" style="margin-bottom:16px">15mm / Fecho Cravejado / Ouro Maciço</p>
+        <div class="font-headline-lg text-primary" style="letter-spacing:-0.02em">R$ 14.500</div>
+      </div>
+    </article>
+    <!-- Card 2 -->
+    <article class="product-card" data-product-id="3" style="border:1px solid var(--surface-variant);cursor:pointer">
+      <div class="card-img" style="aspect-ratio:4/5;max-height:400px">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQlieAH__9Ua5rE80si0yhfOVWx12q9kJMYOCKKcFt8ep0luDLYWuDZ6aJQywPAop5_0x3HgYfIg4LGcnQ9T61HTkCiZ0MZgRQc4OicWKvPMvx_0vidlr0hCXTG6vLt_T0lKXaEyAK-UvzQxHQjDljg2b65xrt29_KqmQCuvsGPyyPr2K3Q9n-H2gebpOHKvg3GRQEcmu3uZGMOKwd7_TTLxxAWw2laDziv8HQE5uoOYoRv0KGhJdaITteZpFRp4Z2vp2c9zDaquAN" alt="Relógio Executive" style="opacity:0.9">
+      </div>
+      <div style="padding:24px">
+        <h3 class="font-headline-mobile uppercase" style="margin-bottom:8px">RELÓGIO EXECUTIVE</h3>
+        <p class="font-body-md text-muted" style="margin-bottom:16px">Automático / Mostrador Negro / Safira</p>
+        <div class="font-headline-lg text-primary" style="letter-spacing:-0.02em">R$ 8.900</div>
+      </div>
+    </article>
+  </section>
+
+  <!-- O Movimento -->
+  <section style="padding:60px 4px;background:#0d0d0d">
+    <div style="max-width:1440px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:32px">
+        <h2 class="font-headline-xl uppercase">O MOVIMENTO</h2>
+        <p class="font-label text-muted" style="margin-top:12px">@MGOLDVIPS</p>
+      </div>
+      <div class="bento-grid">
+        <div class="bento-item bento-large"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh4QboFC2YvQ6CHk9APiwTeXYr7xXMG3icPHLOSg76niDBzf55E6ZezbIDn31yWbg0_bC5c8D7hC0KlypmeWYZWjff2c5xqSoqLjKQhEWI0mo4C-Bae0vHR86okHqBueDCm8xrUjyUMVxsrU-64gYi0dU5rhKGMjdDrV6HLgltfDeVBzbLvtOlwlN4TwikCLxh70kXNZnxrG0R0Cy18Y90jGp0gnpM1zKM_s1tg0yGaHRjVgYrMIFtq-uhPHAP9ZThxQiUTZ5xPaZD" alt="Lifestyle"></div>
+        <div class="bento-item"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMdS59Jv9kiwYBpbSCOE_0jU0WtWk4Q9-1x4zAG8qD-UkG9wVBIQ0ujIWQQDIOvSY73e6BSDkD67aPGinDgqTjuUMieC2iIhi_4sqhpCeYZC-T0i_N9rDo_iSpLhZzv28qxabCa1-hGtnolm2FvEOOkWddetXtnR7WIsgPNsPG7a_EIQfHAPAOiCOupPmgHl0dk5t6tTXYgBHL029oEjL3vo_DkNO31h7XYpFf98zKYVUfom0Tg5HmgCio8bMABGKzHQTqYi2H7ncH" alt="Lifestyle"></div>
+        <div class="bento-item bento-tall"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI590Xj7PomSiwfYhdcqMqxaabmAGh0sU9gKIvoGPmn6fwPCdVTph_KguTfMENO6rRVWScpnuL8fbhQn9IsE5A2UZAcXIasRJPHcuFTQx9LoXU8sLlc-548rQhgE_7Wn8k01wGAyjXmHyD9vUN-mgrhppzLBgkvJcWE4I0PstQTm7Oote0Y2t2aKFadW7NFUIB61e3vITjhfT6dof9DwK36sMDRO0m5QBrEEAOI-Vk83f4jcH_0WaVOBS2cq3tkv5LbPes-qw4DFzF" alt="Lifestyle"></div>
+        <div class="bento-item bento-verified"><span class="material-symbols-outlined" style="font-size:36px;color:var(--primary);font-variation-settings:'FILL' 1;margin-bottom:8px">verified</span><p class="font-label">100% OURO 18K</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PAGE: CATALOG -->
+<div id="page-catalog" class="page">
+  <div class="filter-bar">
+    <button class="btn-ghost filter-btn active" data-cat="todos" onclick="filterProducts('todos')">TODOS</button>
+    <button class="btn-ghost filter-btn" data-cat="correntes" onclick="filterProducts('correntes')">CORRENTES</button>
+    <button class="btn-ghost filter-btn" data-cat="aneis" onclick="filterProducts('aneis')">ANÉIS</button>
+    <button class="btn-ghost filter-btn" data-cat="pulseiras" onclick="filterProducts('pulseiras')">PULSEIRAS</button>
+    <button class="btn-ghost filter-btn" data-cat="relogios" onclick="filterProducts('relogios')">RELÓGIOS</button>
+  </div>
+  <section style="padding:0 20px">
+    <div id="catalog-grid" class="grid-2"></div>
+  </section>
+</div>
+
+<!-- PAGE: CONTACT -->
+<div id="page-contact" class="page">
+  <div style="padding:32px 20px">
+    <h2 class="font-display" style="margin-bottom:16px">CHAMA A GENTE.</h2>
+    <p class="font-body-lg text-muted" style="border-left:2px solid var(--primary-container);padding-left:16px;margin-bottom:32px">Sem precisar explicar. Conexão direta para quem entende de exclusividade.</p>
+    <div class="contact-hero-img">
+      <img src="showroom.jpg" alt="Showroom">
+      <div class="overlay"></div>
+    </div>
+    <div class="grid-1">
+      <!-- WhatsApp -->
+      <a class="contact-card" href="#">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+          <span class="material-symbols-outlined card-icon" style="color:var(--primary-container);margin-bottom:0">chat</span>
+          <span style="background:black;border:1px solid var(--primary-container);padding:4px 12px" class="font-label" style="color:var(--primary-container)">IMEDIATO</span>
+        </div>
+        <h3 class="font-headline-mobile">WHATSAPP</h3>
+        <p class="font-body-md text-muted" style="margin-top:auto">Atendimento prioritário para negociações diretas.</p>
+        <div class="contact-link font-label">Iniciar conversa <span class="material-symbols-outlined" style="font-size:14px">arrow_forward</span></div>
+      </a>
+      <!-- Instagram -->
+      <a class="contact-card" href="https://www.instagram.com/mgoldesjoias/" target="_blank">
+        <span class="material-symbols-outlined card-icon">photo_camera</span>
+        <h3 class="font-headline-mobile">INSTAGRAM</h3>
+        <p class="font-headline-mobile text-gold" style="margin-bottom:12px">@mgoldesjoias</p>
+        <p class="font-body-md text-muted" style="margin-top:auto">Onde o hype acontece. Acompanhe os drops exclusivos.</p>
+      </a>
+      <!-- Showroom -->
+      <a class="contact-card" href="https://maps.app.goo.gl/AGZrJBbRbn3oGBtk9" target="_blank">
+        <span class="material-symbols-outlined card-icon">location_on</span>
+        <h3 class="font-headline-mobile">SHOWROOM</h3>
+        <p class="font-body-md text-muted" style="margin-bottom:16px">R. Euclídes da Cunha, 47<br>Jardim Limoeiro<br>Serra - ES, 29164-032</p>
+        <p class="font-label text-muted" style="border-top:1px solid #5F5B57;padding-top:12px;margin-top:auto">Apenas com hora marcada.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE: DETAIL (dynamic) -->
+<div id="page-detail" class="page">
+  <div id="detail-content"></div>
+</div>
+
+</div><!-- /main-content -->
+
+<!-- Fixed Bottom CTA (detail only) -->
+<div id="fixed-cta" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--background);border-top:1px solid var(--outline-variant);padding:16px 20px;box-shadow:0 -10px 30px rgba(0,0,0,0.8)">
+  <button class="btn-primary" style="width:100%;justify-content:center;padding:16px"><span class="material-symbols-outlined" style="font-size:20px">chat</span>TENHO INTERESSE</button>
+</div>
+
+<!-- ===== BOTTOM NAV ===== -->
+<nav class="bottom-nav">
+  <button class="nav-item active" onclick="navigate('home')">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span>
+    <span>Início</span>
+  </button>
+  <button class="nav-item" onclick="navigate('catalog')">
+    <span class="material-symbols-outlined">grid_view</span>
+    <span>Catálogo</span>
+  </button>
+  <button class="nav-item" onclick="navigate('contact')">
+    <span class="material-symbols-outlined">chat</span>
+    <span>WhatsApp</span>
+  </button>
+  <button class="nav-item" onclick="window.open('#','_blank')">
+    <span class="material-symbols-outlined">storefront</span>
+    <span>Loja</span>
+  </button>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
