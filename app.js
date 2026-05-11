@@ -16,7 +16,37 @@ const PRODUCTS = [
   { id:4, name:"Pulseira Cordão Baiano Duplo Ouro 18K", price:"R$ 6.200", cat:"pulseiras", badge:"",
     img:"https://lh3.googleusercontent.com/aida-public/AB6AXuAB5jZq9g2f3E-nX1qAgNx36SOuT9F_q8LfmWpk84P18QyDNc_6LNQOnqgofpEUyM9ppFR4uIzV6hlffH6YXcLQMuHTWXgg8kgPKNfZ4Vu1-GyeExOFEck1UlIGI-f8TVLeoWLKIOuWV4r8e_AmVPZl8-X2yZ3cof2yZajkkJAvPlm18V8i9zuRrpOn7AHKpwsJJaSjsCi34XfqQ6xg5rYZ1zVPZEZ0Ed-nrHf44c5ASg7LXbhB3xYz-xpk2k6w6_FqzRJemG5_Uzad",
     material:"Ouro 18k", peso:"35 Gramas", tamanho:"21 cm", entrega:"Seguro Sedex",
-    desc:"Elegância que envolve. O cordão baiano duplo traz textura e movimento ao pulso, com acabamento polido que captura luz de todos os ângulos." }
+    desc:"Elegância que envolve. O cordão baiano duplo traz textura e movimento ao pulso, com acabamento polido que captura luz de todos os ângulos." },
+  { id:5, name:"Anéis Ouro 18K Coleção Street", price:"Sob Consulta", cat:"aneis", badge:"LANÇAMENTO",
+    img:"cat-1.jpg", material:"Ouro 18k Maciço", peso:"Varia", tamanho:"Sob Medida", entrega:"Seguro Sedex",
+    desc:"Anéis exclusivos com design urbano e marcante." },
+  { id:6, name:"Anéis Religiosos Ouro 18K", price:"Sob Consulta", cat:"aneis", badge:"",
+    img:"cat-2.jpg", material:"Ouro 18k Maciço", peso:"Varia", tamanho:"Sob Medida", entrega:"Seguro Sedex",
+    desc:"Demonstre sua fé com estilo. Peças detalhadas e com acabamento premium." },
+  { id:7, name:"Anéis Estrela de Davi Cravejados", price:"Sob Consulta", cat:"aneis", badge:"",
+    img:"cat-3.jpg", material:"Ouro 18k Maciço", peso:"Varia", tamanho:"Sob Medida", entrega:"Seguro Sedex",
+    desc:"Anéis com design Estrela de Davi, trazendo pedras coloridas e muito brilho." },
+  { id:8, name:"Corrente com Pingente Cruz Texturizada", price:"Sob Consulta", cat:"correntes", badge:"",
+    img:"cat-4.jpg", material:"Ouro 18k", peso:"Varia", tamanho:"Diversos", entrega:"Seguro Sedex",
+    desc:"Corrente de elos com pingente de cruz." },
+  { id:9, name:"Corrente Laminada com Cruz Vazada", price:"Sob Consulta", cat:"correntes", badge:"",
+    img:"cat-5.jpg", material:"Ouro 18k", peso:"Varia", tamanho:"Diversos", entrega:"Seguro Sedex",
+    desc:"Corrente laminada fina acompanhada de cruz vazada." },
+  { id:10, name:"Corrente Grossa Elo Groumet", price:"Sob Consulta", cat:"correntes", badge:"PESADO",
+    img:"cat-6.jpg", material:"Ouro 18k Maciço", peso:"Varia", tamanho:"Sob Medida", entrega:"Seguro Sedex",
+    desc:"A verdadeira ostentação. Corrente de espessura extrema para quem gosta de chamar atenção." },
+  { id:11, name:"Corrente Placa Nunca foi Sorte", price:"Sob Consulta", cat:"correntes", badge:"",
+    img:"cat-7.jpg", material:"Ouro 18k", peso:"Varia", tamanho:"Diversos", entrega:"Seguro Sedex",
+    desc:"Corrente com placa gravada 'Nunca foi sorte sempre foi Deus'." },
+  { id:12, name:"Alianças Trabalhadas Ouro 18K", price:"Sob Consulta", cat:"aneis", badge:"",
+    img:"cat-8.jpg", material:"Ouro 18k", peso:"Varia", tamanho:"Sob Medida", entrega:"Seguro Sedex",
+    desc:"Par de alianças elegantes e trabalhadas para ocasiões especiais." },
+  { id:13, name:"Pulseira de Ouro Maciço", price:"Sob Consulta", cat:"pulseiras", badge:"",
+    img:"cat-9.jpg", material:"Ouro 18k", peso:"Varia", tamanho:"Diversos", entrega:"Seguro Sedex",
+    desc:"Pulseira em ouro com elos robustos." },
+  { id:14, name:"Corrente Fina com Cruz Vazada", price:"Sob Consulta", cat:"correntes", badge:"",
+    img:"cat-10.jpg", material:"Ouro 18k", peso:"Varia", tamanho:"Diversos", entrega:"Seguro Sedex",
+    desc:"Corrente fina elegante, perfeita para uso diário." }
 ];
 
 const IMAGES = {
@@ -94,9 +124,7 @@ function renderDetail() {
     </div>
     <div class="detail-info">
       <h2 class="font-headline-mobile title">${p.name}</h2>
-      <div class="price">${p.price}</div>
-      <p class="installments">Ou 12x sem juros</p>
-      <div class="detail-desc">
+      <div class="detail-desc" style="margin-top:16px">
         <h4>Brilho que impõe.</h4>
         <p>${p.desc}</p>
       </div>
@@ -124,15 +152,15 @@ function renderDetail() {
       <div class="grid-2">
         <a class="related-item" onclick="navigate('detail',${PRODUCTS.filter(x=>x.id!==p.id)[0].id})">
           <div class="rel-img"><img src="${IMAGES.rel1}" alt=""><div class="gradient"></div></div>
-          <div class="rel-info"><h4 class="font-label">Grume Duplo</h4><p>150g - R$ 18K</p></div>
+          <div class="rel-info"><h4 class="font-label">Grume Duplo</h4><p>150g</p></div>
         </a>
         <a class="related-item" onclick="navigate('detail',${PRODUCTS.filter(x=>x.id!==p.id)[1].id})">
           <div class="rel-img"><img src="${IMAGES.rel2}" alt=""><div class="gradient"></div></div>
-          <div class="rel-info"><h4 class="font-label">Cartier Maciça</h4><p>80g - R$ 9.8K</p></div>
+          <div class="rel-info"><h4 class="font-label">Cartier Maciça</h4><p>80g</p></div>
         </a>
         <a class="related-item" onclick="navigate('detail',${PRODUCTS.filter(x=>x.id!==p.id)[2]?.id || 1})">
           <div class="rel-img"><img src="${IMAGES.rel3}" alt=""><div class="gradient"></div></div>
-          <div class="rel-info"><h4 class="font-label">Piastrine King</h4><p>200g - R$ 24K</p></div>
+          <div class="rel-info"><h4 class="font-label">Piastrine King</h4><p>200g</p></div>
         </a>
         <a class="related-item" onclick="navigate('catalog')" style="display:flex;align-items:center;justify-content:center;background:var(--surface-container)">
           <div style="text-align:center;padding:20px"><span class="material-symbols-outlined" style="font-size:48px;color:var(--outline)">arrow_forward</span><p class="font-label" style="color:var(--primary-container);margin-top:8px">Ver Catálogo</p></div>
@@ -156,8 +184,7 @@ function filterProducts(cat) {
         <div style="position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(255,255,255,0.03),transparent);pointer-events:none"></div>
       </div>
       <div class="card-body">
-        <h3>${p.name}</h3>
-        <div class="price">${p.price}</div>
+        <h3 style="margin-bottom: 12px">${p.name}</h3>
         <button class="card-cta" data-action="chat"><span class="material-symbols-outlined" style="font-size:18px">chat</span>CHAMAR</button>
       </div>
     </div>`).join('');
